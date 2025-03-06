@@ -4,6 +4,7 @@ Hello, I’m Nguyễn Lê Anh Khoa – a passionate developer dedicated to creat
 
 ![Portfolio KhoaDev](https://raw.githubusercontent.com/khoait03/portfolio-khoadev/main/public/demo/portfolio-khoadev.png)
 ![Portfolio KhoaDev](https://raw.githubusercontent.com/khoait03/portfolio-khoadev/main/public/demo/portfolio-khoadev-2.png)
+![Portfolio KhoaDev](https://raw.githubusercontent.com/khoait03/portfolio-khoadev/main/public/demo/portfolio-khoadev-3.png)
 ![Portfolio KhoaDev](https://raw.githubusercontent.com/khoait03/portfolio-khoadev/main/public/demo/portfolio-khoadev-4.png)
 ![Portfolio KhoaDev](https://raw.githubusercontent.com/khoait03/portfolio-khoadev/main/public/demo/portfolio-khoadev-5.png)
 ![Portfolio KhoaDev](https://raw.githubusercontent.com/khoait03/portfolio-khoadev/main/public/demo/portfolio-khoadev-6.png)
