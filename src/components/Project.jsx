@@ -3,15 +3,18 @@ import { IoLinkOutline } from 'react-icons/io5';
 import { motion } from 'motion/react';
 import { useTheme } from '../contexts/themeContext';
 import VideoPlayer from './VideoPlayer';
+import DetailPlayer from './DetailPlayer';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoLogoGithub } from 'react-icons/io';
 import { FaPlay, FaFolder } from 'react-icons/fa6';
 import { CiFileOn } from 'react-icons/ci';
+import { FaRegEye } from 'react-icons/fa';
 
 const Project = () => {
      const { language, darkMode } = useTheme();
      const [selectedVideo, setSelectedVideo] = useState(null);
+     const [selectedDetail, setSelectedDetail] = useState(null);
 
      return (
           <section id="projects" className="border-b border-sky-200 dark:border-neutral-800 pb-24">
@@ -73,6 +76,14 @@ const Project = () => {
                                                        <FaPlay className={darkMode ? 'text-black' : 'text-white'} /> Video demo
                                                   </button>
                                              )}
+                                             {project.description[language] && (
+                                                  <button
+                                                       onClick={() => setSelectedDetail(project.description[language])}
+                                                       className="inline-flex items-center gap-1 px-3 py-1 bg-gray-800 dark:bg-neutral-200 rounded hover:bg-gray-700 dark:hover:bg-neutral-50 cursor-pointer"
+                                                  >
+                                                       <FaRegEye className={darkMode ? 'text-black' : 'text-white'} /> Information
+                                                  </button>
+                                             )}
                                              {project.docs && (
                                                   <Link
                                                        to={project.docs}
@@ -84,7 +95,9 @@ const Project = () => {
                                              )}
                                         </div>
                                    )}
-                                   <p className="mb-4 text-gray-700 dark:text-gray-400">{project.description[language]}</p>
+
+                                   <p className="mb-4 text-gray-700 dark:text-gray-400 line-clamp-3">{project.description[language].replace(/<[^>]+>/g, '')}</p>
+
                                    {project.technologies.map((technology, index) => (
                                         <span className="inline-block mr-2 mb-2 rounded px-2 py-1 text-sm font-medium bg-sky-50 text-cyan-950 dark:bg-white/5 dark:text-sky-600" key={index}>
                                              {technology}
@@ -95,6 +108,7 @@ const Project = () => {
                     ))}
                </div>
                {selectedVideo && <VideoPlayer videoUrl={selectedVideo} onClose={() => setSelectedVideo(null)} />}
+               {selectedDetail && <DetailPlayer description={selectedDetail} onClose={() => setSelectedDetail(null)} />}
           </section>
      );
 };

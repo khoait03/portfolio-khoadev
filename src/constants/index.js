@@ -6,8 +6,12 @@ import { FaFacebook } from 'react-icons/fa';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 
 
-import project3 from '../assets/projects/portfolio-khoadev.png';
-import project4 from '../assets/projects/vieclamphuquoc-cv.png';
+import project1 from '../assets/projects/vieclamphuquoc-cv.png';
+import project2 from '../assets/projects/laravel-quan-ao.png';
+import project3 from '../assets/projects/laravel-shoes.png';
+import project10 from '../assets/projects/portfolio-khoadev.png';
+
+
 
 import javascript from '../assets/technologies/javascript.png';
 import typescript from '../assets/technologies/typescript.png';
@@ -128,26 +132,66 @@ export const PROJECTS = [
                vietnamese: 'Website tuyển dụng và tìm kiếm việc làm vieclamphuquoc.com.vn',
                english: 'Recruitment and job search website vieclamphuquoc.com.vn',
           },
-          image: project4,
+          image: project1,
           role: 'Fullstack Developer',
           members: 1,
-          video: 'https://www.youtube.com/embed/68vfSs5y8mo',
           github: 'https://github.com/',
           link: 'https://vieclamphuquoc.com.vn',
-          docs: 'https://vieclamphuquoc.com.vn',
+          docs: 'https://drive.google.com/drive/folders/1QbdybF4YuB_olhK7RtlbUMVA1TGmIZfb?usp=sharing',
           description: {
                vietnamese:
-                    'VieclamPhuQuoc.com.vn là một nền tảng tuyển dụng và tìm kiếm việc làm dành riêng cho khu vực Phú Quốc. Website kết nối nhà tuyển dụng và ứng viên, giúp quá trình tuyển dụng trở nên nhanh chóng và hiệu quả hơn. Ứng viên: Đăng ký, đăng nhập tài khoản. Tìm kiếm và ứng tuyển việc làm. Sử dụng công cụ tạo CV chuyên nghiệp. Quản lý danh sách công việc đã ứng tuyển. Nhà tuyển dụng: Đăng tin tuyển dụng, tiếp cận ứng viên tiềm năng. Nhận và quản lý CV từ ứng viên. Gửi email thông báo kết quả tuyển dụng. Tạo lịch phỏng vấn và quản lý quy trình tuyển dụng. Mua gói đăng tin để nâng cao hiệu quả tuyển dụng. Quản trị viên: Quản lý toàn bộ hệ thống. Duyệt tin tuyển dụng trước khi hiển thị. Quản lý bài viết, nội dung trên website.',
-               english: 'VieclamPhuQuoc.com.vn is a recruitment and job search platform specifically for the Phu Quoc region, connecting employers and job seekers to streamline the hiring process efficiently. Job seekers can register, log in, search and apply for jobs, use a professional CV creation tool, and manage their applied job list. Employers can post job listings, receive and manage CVs, send recruitment result notifications, schedule interviews, and purchase job posting packages to enhance recruitment efficiency. Administrators oversee the entire system, approve job postings before publication, and manage articles and website content.',
+                    "<p><strong>VieclamPhuQuoc.com.vn</strong> là một nền tảng tuyển dụng và tìm kiếm việc làm dành riêng cho khu vực <strong>Phú Quốc</strong>. Website kết nối nhà tuyển dụng và ứng viên, giúp quá trình tuyển dụng trở nên <em>nhanh chóng</em> và <em>hiệu quả</em> hơn.</p><h3 class='mt-4 font-semibold'>Ứng viên:</h3><ul class='list-disc list-inside'><li>Đăng ký, đăng nhập tài khoản.</li><li>Tìm kiếm và ứng tuyển việc làm.</li><li>Sử dụng công cụ tạo CV chuyên nghiệp.</li><li>Quản lý danh sách công việc đã ứng tuyển.</li></ul><h3 class='mt-4 font-semibold'>Nhà tuyển dụng:</h3><ul class='list-disc list-inside'><li>Đăng tin tuyển dụng, tiếp cận ứng viên tiềm năng.</li><li>Nhận và quản lý CV từ ứng viên.</li><li>Gửi email thông báo kết quả tuyển dụng.</li><li>Tạo lịch phỏng vấn và quản lý quy trình tuyển dụng.</li><li>Mua gói đăng tin để nâng cao hiệu quả tuyển dụng.</li></ul><h3 class='mt-4 font-semibold'>Quản trị viên:</h3><ul class='list-disc list-inside'><li>Quản lý toàn bộ hệ thống.</li><li>Duyệt tin tuyển dụng trước khi hiển thị.</li><li>Quản lý bài viết, nội dung trên website.</li></ul>",
+
+               english: "<p><strong>VieclamPhuQuoc.com.vn</strong> is a recruitment and job search platform specifically for the <strong>Phu Quoc</strong> region, connecting employers and job seekers to streamline the hiring process efficiently.</p><h3 class='mt-4 font-semibold'>Job Seekers:</h3><ul class='list-disc list-inside'><li>Register and log in.</li><li>Search and apply for jobs.</li><li>Use a professional CV creation tool.</li><li>Manage their applied job list.</li></ul><h3 class='mt-4 font-semibold'>Employers:</h3><ul class='list-disc list-inside'><li>Post job listings and reach potential candidates.</li><li>Receive and manage CVs from applicants.</li><li>Send recruitment result notifications.</li><li>Schedule interviews and manage hiring processes.</li><li>Purchase job posting packages for better recruitment efficiency.</li></ul><h3 class='mt-4 font-semibold'>Administrators:</h3><ul class='list-disc list-inside'><li>Oversee the entire system.</li><li>Approve job postings before publication.</li><li>Manage articles and website content.</li></ul>",
           },
-          technologies: ['ReactJs', 'Laravel', 'Filament', 'Bootstap 5', 'Tailwind css', 'Mysql', 'JWT', 'Pusher'],
+          technologies: ['ReactJs', 'Laravel', 'Filament', 'Bootstap 5', 'Tailwind css', 'Mysql', 'Pusher'],
+     },
+     {
+          title: {
+               vietnamese: 'Website thương mại điện tử bán quần áo',
+               english: 'E-commerce website selling clothes',
+          },
+          image: project2,
+          role: 'Fullstack Developer',
+          members: 1,
+          video: 'https://www.youtube.com/embed/4P9vqAgI3mg',
+          github: 'https://github.com/',
+          link: 'https://quanao.themedemo.site',
+          docs: 'https://drive.google.com/drive/folders/11bGHs0TBA1qzt3fFi6Blt5DG_CHJz4WZ?usp=sharing',
+          description: {
+               vietnamese:
+                    "<p><strong>Website thương mại điện tử</strong> bán quần áo với các tính năng hiện đại:</p> <ul class='list-disc list-inside'><li><strong>Tìm kiếm</strong>, lọc theo biến thể sản phẩm, thương hiệu và mức giá.</li><li>Hỗ trợ <strong>giỏ hàng</strong>, <strong>mã giảm giá</strong>, <strong>thanh toán online</strong> qua Momo, VNPay, COD.</li></ul> <p><strong>Hệ thống đặt hàng:</strong></p> <ul class='list-disc list-inside'><li>Theo dõi trạng thái đơn hàng.</li><li>Gửi thông báo tự động qua email.</li></ul> <p><strong>Quản lý menu:</strong></p> <ul class='list-disc list-inside'><li>Nhiều cấp.</li><li>Hỗ trợ widget, chương trình sale.</li></ul> <p><strong>Phân quyền tài khoản:</strong></p> <ul class='list-disc list-inside'><li>Theo từng vai trò.</li></ul> <p><strong>Quản lý đơn hàng:</strong></p> <ul class='list-disc list-inside'><li>Cập nhật trạng thái đơn.</li><li>Duyệt đơn hàng.</li></ul>",
+
+               english: "<p><strong>An e-commerce website</strong> for selling clothes with modern features:</p> <ul class='list-disc list-inside'><li><strong>Search</strong> and filter by product variations, brands, and price range.</li><li>Supports <strong>shopping cart</strong>, <strong>discount codes</strong>, and <strong>online payments</strong> via Momo, VNPay, and COD.</li></ul> <p><strong>Order tracking system:</strong></p> <ul class='list-disc list-inside'><li>Automatically sends email notifications.</li></ul> <p><strong>Multi-level menu management:</strong></p> <ul class='list-disc list-inside'><li>Supports widgets and sales programs.</li></ul> <p><strong>User role-based account permissions:</strong></p> <ul class='list-disc list-inside'><li>Different roles with specific permissions.</li></ul> <p><strong>Order management:</strong></p> <ul class='list-disc list-inside'><li>Update order status.</li><li>Approve orders.</li></ul>",
+          },
+          technologies: ['Laravel', 'HTML', 'CSS', 'Bootstap 5', 'Mysql', 'JWT', 'Pusher'],
+     },
+     {
+          title: {
+               vietnamese: 'Website thương mại điện tử bán giày và phụ kiện ',
+               english: 'E-commerce website for selling shoes and accessories',
+          },
+          image: project3,
+          role: 'Fullstack Developer',
+          members: 1,
+          video: 'https://www.youtube.com/embed/_f8Tq5xgtrU',
+          github: 'https://github.com/',
+          link: 'https://shoes.themedemo.site',
+          docs: 'https://drive.google.com/drive/folders/1454qsENP3aAEaPl4sf4TTJnO3y60iWZJ?usp=sharing',
+          description: {
+               vietnamese:
+                    "<p><strong>Website thương mại điện tử</strong> bán phụ kiện giày dép với các tính năng:</p> <ul class='list-disc list-inside'><li><strong>Tìm kiếm</strong>, lọc theo thương hiệu và mức giá.</li><li>Hỗ trợ <strong>giỏ hàng</strong>, <strong>mã giảm giá</strong>, <strong>thanh toán online</strong> qua Momo, VNPay, COD.</li><li><strong>Đặt hàng</strong>: theo dõi trạng thái đơn hàng và gửi thông báo tự động qua email.</li><li><strong>Phân quyền tài khoản</strong> theo từng vai trò.</li><li><strong>Quản lý đơn hàng</strong>: cập nhật trạng thái đơn, duyệt đơn.</li></ul>",
+
+               english: "<p><strong>An e-commerce website</strong> for selling shoe accessories with features:</p> <ul class='list-disc list-inside'><li><strong>Search</strong> and filter by brand and price range.</li><li>Supports <strong>shopping cart</strong>, <strong>discount codes</strong>, and <strong>online payments</strong> via Momo, VNPay, and COD.</li><li><strong>Order tracking</strong> with automatic email notifications.</li><li><strong>User role-based account permissions</strong>.</li><li><strong>Order management</strong>: update order status and approve orders.</li></ul>",
+          },
+          technologies: ['Laravel', 'HTML', 'CSS', 'Bootstap 5', 'Mysql'],
      },
      {
           title: {
                vietnamese: 'Personal Portfolio Website',
                english: 'Personal Portfolio Website',
           },
-          image: project3,
+          image: project10,
           github: 'https://github.com/khoait03/portfolio-khoadev',
           link: 'https://portfolio-khoadev.vercel.app',
           description: {

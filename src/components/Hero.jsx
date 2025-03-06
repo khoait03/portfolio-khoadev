@@ -28,7 +28,7 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-14 text-5xl tracking-tight lg:mt-16 lg:text-7xl"
+              className="pb-6 text-4xl tracking-tight lg:mt-16 lg:text-7xl lg:pb-14"
             >
               {TITLES.hero[language]}
             </motion.h1>
