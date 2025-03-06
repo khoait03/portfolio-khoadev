@@ -41,8 +41,8 @@ import { CgWorkAlt } from 'react-icons/cg';
 
 export const HERO_CONTENT = {
      vietnamese:
-          'Xin chào, tôi là Nguyễn Lê Anh Khoa – một lập trình viên đam mê tạo ra các ứng dụng web trực quan và hiệu suất cao. Với nền tảng vững chắc về các công nghệ hiện đại như React, Next.js và TailwindCSS, tôi luôn nỗ lực biến ý tưởng thành những trải nghiệm người dùng mượt mà. Không ngừng học hỏi và phát triển, tôi luôn cố gắng mỗi ngày để trở thành phiên bản tốt hơn của chính mình.',
-     english: "Hi, I'm Nguyễn Lê Anh Khoa – a Frontend Developer passionate about crafting intuitive and high-performance web applications. With a strong foundation in modern technologies like React, Next.js, and TailwindCSS, I thrive on turning ideas into seamless user experiences. Always eager to learn and grow, I strive to improve every day to become a better version of myself.",
+          'Xin chào, tôi là Nguyễn Lê Anh Khoa – một lập trình viên đam mê tạo ra các ứng dụng web trực quan và hiệu suất cao. Tôi luôn nỗ lực biến ý tưởng thành những trải nghiệm người dùng mượt mà. Không ngừng học hỏi và phát triển, tôi luôn cố gắng mỗi ngày để trở thành phiên bản tốt hơn của chính mình.',
+     english: 'Hello, I am Nguyễn Lê Anh Khoa – a passionate developer dedicated to creating intuitive and high-performance web applications. I strive to turn ideas into seamless user experiences. Continuously learning and growing, I always aim to become a better version of myself every day.',
 };
 
 export const ABOUT_CONTENT = {
