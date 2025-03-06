@@ -58,7 +58,8 @@ const Project = () => {
                                         </div>
                                    )}
                                    {(project.video || project.github || project.docs) && (
-                                        <div className="flex gap-3 mb-3 text-neutral-200 dark:text-gray-900">
+                                        // <div className="flex gap-3 mb-3 text-neutral-200 dark:text-gray-900">
+                                        <div className="flex flex-wrap gap-3 mb-3 text-neutral-200 dark:text-gray-900">
                                              {project.github && (
                                                   <Link
                                                        to={project.github}
@@ -81,7 +82,7 @@ const Project = () => {
                                                        onClick={() => setSelectedDetail(project.description[language])}
                                                        className="inline-flex items-center gap-1 px-3 py-1 bg-gray-800 dark:bg-neutral-200 rounded hover:bg-gray-700 dark:hover:bg-neutral-50 cursor-pointer"
                                                   >
-                                                       <FaRegEye className={darkMode ? 'text-black' : 'text-white'} /> Information
+                                                       <FaRegEye className={darkMode ? 'text-black' : 'text-white'} /> Detail
                                                   </button>
                                              )}
                                              {project.docs && (
