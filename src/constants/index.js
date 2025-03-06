@@ -149,7 +149,7 @@ export const PROJECTS = [
           },
           image: project3,
           github: 'https://github.com/khoait03/portfolio-khoadev',
-          link: 'https://portfolio.themedemo.site/',
+          link: 'https://portfolio-khoadev.vercel.app',
           description: {
                vietnamese: 'Một website cá nhân giới thiệu bản thân, dự án, kỹ năng và thông tin liên hệ.',
                english: 'A personal website introducing myself, projects, skills, and contact information.',
