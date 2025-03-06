@@ -1,11 +1,12 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { RiCloseLargeFill } from 'react-icons/ri';
 import { useTheme } from '../contexts/themeContext';
 
 const DetailPlayer = ({ description, onClose }) => {
      const modalRef = useRef(null);
-
-    const { language } = useTheme();
+     const contentRef = useRef(null);
+     const { language } = useTheme();
+     const [showBottomClose, setShowBottomClose] = useState(false);
 
      useEffect(() => {
           const handleKeyDown = (e) => {
@@ -14,6 +15,14 @@ const DetailPlayer = ({ description, onClose }) => {
           document.addEventListener('keydown', handleKeyDown);
           return () => document.removeEventListener('keydown', handleKeyDown);
      }, [onClose]);
+
+     useEffect(() => {
+          if (modalRef.current && contentRef.current) {
+               const modalHeight = modalRef.current.clientHeight;
+               const contentHeight = contentRef.current.scrollHeight;
+               setShowBottomClose(contentHeight > modalHeight);
+          }
+     }, [description]);
 
      const handleClickOutside = (e) => {
           if (modalRef.current && !modalRef.current.contains(e.target)) {
@@ -30,13 +39,22 @@ const DetailPlayer = ({ description, onClose }) => {
                               <RiCloseLargeFill className="text-xl font-medium" />
                          </button>
                     </div>
-                    <div className="p-6 text-gray-700 dark:text-gray-400" dangerouslySetInnerHTML={{ __html: description }} />
+                    <div ref={contentRef} className="p-6 text-gray-700 dark:text-gray-400 overflow-auto" dangerouslySetInnerHTML={{ __html: description }} />
+
+                    {/* Thêm nút Đóng bên dưới nếu nội dung quá dài */}
+                    {showBottomClose && (
+                         <div className="p-4 flex justify-center">
+                              <button className="bg-sky-50 text-cyan-950 dark:bg-white/5 dark:text-sky-600 px-4 py-2 rounded" onClick={onClose}>
+                                   <div className="flex items-center gap-1">
+                                        <RiCloseLargeFill className="font-medium" />
+                                        {language === 'vietnamese' ? 'Đóng' : 'Close'}
+                                   </div>
+                              </button>
+                         </div>
+                    )}
                </div>
           </div>
      );
 };
 
 export default DetailPlayer;
-
-
-
