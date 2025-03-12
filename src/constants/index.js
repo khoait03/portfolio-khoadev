@@ -135,7 +135,7 @@ export const PROJECTS = [
           image: project1,
           role: 'Fullstack Developer',
           members: 1,
-          github: 'https://github.com/',
+          github: 'https://github.com/khoait03/CanThoItJob',
           link: 'https://vieclamphuquoc.com.vn',
           docs: 'https://drive.google.com/drive/folders/1QbdybF4YuB_olhK7RtlbUMVA1TGmIZfb?usp=sharing',
           description: {
@@ -155,7 +155,7 @@ export const PROJECTS = [
           role: 'Fullstack Developer',
           members: 1,
           video: 'https://www.youtube.com/embed/4P9vqAgI3mg',
-          github: 'https://github.com/',
+          github: 'https://github.com/khoait03',
           link: 'https://quanao.themedemo.site',
           docs: 'https://drive.google.com/drive/folders/11bGHs0TBA1qzt3fFi6Blt5DG_CHJz4WZ?usp=sharing',
           description: {
@@ -175,7 +175,7 @@ export const PROJECTS = [
           role: 'Fullstack Developer',
           members: 1,
           video: 'https://www.youtube.com/embed/_f8Tq5xgtrU',
-          github: 'https://github.com/',
+          github: 'https://github.com/khoait03',
           link: 'https://shoes.themedemo.site',
           docs: 'https://drive.google.com/drive/folders/1454qsENP3aAEaPl4sf4TTJnO3y60iWZJ?usp=sharing',
           description: {
