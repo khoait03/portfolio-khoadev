@@ -28,7 +28,7 @@ const App = () => {
             <div className="container mx-auto px-4 lg:px-8 relative">
                  <Header />
                  <Hero />
-                 <About />
+                 {/* <About /> */}
                  <Technologies />
                  <Experience />
                  <Project />
@@ -49,7 +49,7 @@ const App = () => {
                                 <span>{language === 'vietnamese' ? 'Sáng - Tối' : 'Dark Mode'}</span>
                            </span>
                       </button>
-                      <a href="#about" className="relative group p-2 cursor-pointer">
+                      <a href="#hero" className="relative group p-2 cursor-pointer">
                            <CiUser className="text-2xl" />
                            <span className="absolute right-full mr-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white text-lg px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity w-auto min-w-max whitespace-nowrap hidden md:block ">
                                 <span>{language === 'vietnamese' ? 'Giới thiệu' : 'About me'}</span>
