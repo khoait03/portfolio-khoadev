@@ -5,7 +5,7 @@ import { FaGithub } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 
-
+import LMSISC from '../assets/projects/lms-isc.png';
 import project1 from '../assets/projects/vieclamphuquoc-cv.png';
 import project2 from '../assets/projects/laravel-quan-ao.png';
 import project3 from '../assets/projects/laravel-shoes.png';
@@ -68,7 +68,7 @@ export const TIMELINE = [
           time: '01/2024 - 4/2025',
           description: {
                vietnamese:
-                    'Tham gia phát triển và bảo trì các dự án sử dụng ReactJS và React Native. Làm việc với RESTful APIs và tích hợp các dịch vụ bên thứ ba. Làm việc nhóm, tham gia các cuộc họp trao đổi về yêu cầu và giải pháp kỹ thuật. Viết tài liệu kỹ thuật, hướng dẫn sử dụng cho các phần đã phát triển.',
+                    'Tham gia học tập và phát triển và bảo trì các dự án sử dụng ReactJS và React Native. Làm việc với RESTful APIs và tích hợp các dịch vụ bên thứ ba. Làm việc nhóm, tham gia các cuộc họp trao đổi về yêu cầu và giải pháp kỹ thuật. Viết tài liệu kỹ thuật, hướng dẫn sử dụng cho các phần đã phát triển.',
                english: 'Participate in the development and maintenance of projects using ReactJS and React Native. Work with RESTful APIs and integrate third-party services. Collaborate with the team, attend meetings to discuss requirements and technical solutions. Document technical specifications and provide user guidelines for developed features.',
           },
           icon: React.createElement(CgWorkAlt),
@@ -113,7 +113,7 @@ export const TIMELINE = [
                english: 'Started Learning Web Development',
           },
           company: {
-               vietnamese: 'Cao đẳng FPT Polytechnic Cần Thơ',
+               vietnamese: 'Cao đẳng FPT Polytechnic cơ sở Cần Thơ',
                english: 'FPT Polytechnic College Can Tho',
           },
           time: '08/2022',
@@ -127,6 +127,25 @@ export const TIMELINE = [
 ];
 
 export const PROJECTS = [
+     {
+          title: {
+               vietnamese: 'Hệ thống quản lý học tập (LMS) - ALTA SOFTWARE AND ISC',
+               english: 'Learning Management System (LMS) - ALTA SOFTWARE AND ISC',
+          },
+          image: LMSISC,
+          role: 'Frontend Developer',
+          members: 1,
+          github: 'https://github.com/khoait03/lms-isc',
+          link: 'https://lms-isc.vercel.app',
+          docs: '',
+          description: {
+               vietnamese:
+                    "<p><strong>Hệ thống Learning Management System (LMS)</strong> là nền tảng hỗ trợ lưu trữ và quản lý tài liệu giảng dạy, đề thi, bài giảng và thông báo, giúp tối ưu hóa quá trình giảng dạy và học tập.</p><h3 class='mt-4 font-semibold'>Lãnh đạo:</h3><ul class='list-disc list-inside'><li>Quản lý toàn bộ hệ thống LMS.</li><li>Giám sát quá trình giảng dạy và học tập.</li><li>Quản lý nội dung, tài liệu giảng dạy.</li><li>Phê duyệt các thông báo quan trọng.</li></ul><h3 class='mt-4 font-semibold'>Giảng viên & giáo viên:</h3><ul class='list-disc list-inside'><li>Đăng tải bài giảng, tài liệu học tập.</li><li>Quản lý đề thi và bài kiểm tra.</li><li>Gửi thông báo đến học viên.</li><li>Theo dõi tiến độ học tập của học viên.</li></ul><h3 class='mt-4 font-semibold'>Học viên:</h3><ul class='list-disc list-inside'><li>Truy cập và tải tài liệu học tập.</li><li>Làm bài kiểm tra và nộp bài tập.</li><li>Nhận thông báo từ giảng viên và nhà trường.</li><li>Quản lý quá trình học tập cá nhân.</li></ul>",
+
+               english: "<p><strong>The Learning Management System (LMS)</strong> is a platform that supports storing and managing teaching materials, exams, lectures, and announcements, optimizing the teaching and learning process.</p><h3 class='mt-4 font-semibold'>Leadership:</h3><ul class='list-disc list-inside'><li>Manage the entire LMS system.</li><li>Supervise the teaching and learning process.</li><li>Oversee content and teaching materials.</li><li>Approve important announcements.</li></ul><h3 class='mt-4 font-semibold'>Teacher:</h3><ul class='list-disc list-inside'><li>Upload lectures and learning materials.</li><li>Manage exams and tests.</li><li>Send notifications to students.</li><li>Monitor student progress.</li></ul><h3 class='mt-4 font-semibold'>Students:</h3><ul class='list-disc list-inside'><li>Access and download learning materials.</li><li>Take tests and submit assignments.</li><li>Receive notifications from instructors and the institution.</li><li>Manage their learning progress.</li></ul>",
+          },
+          technologies: ['React', 'TypeScript', 'Axios', 'Redux Toolkit', 'Tailwind css'],
+     },
      {
           title: {
                vietnamese: 'Website tuyển dụng và tìm kiếm việc làm vieclamphuquoc.com.vn',
@@ -158,7 +177,8 @@ export const PROJECTS = [
           video: 'https://www.youtube.com/embed/pbN7TXLamng',
           github: 'https://github.com/khoait03',
           link: 'https://quanao.themedemo.site',
-          docs: 'https://drive.google.com/drive/folders/11bGHs0TBA1qzt3fFi6Blt5DG_CHJz4WZ?usp=sharing',
+          // https://drive.google.com/drive/folders/11bGHs0TBA1qzt3fFi6Blt5DG_CHJz4WZ?usp=sharing
+          docs: '',
           description: {
                vietnamese:
                     "<p><strong>Website thương mại điện tử</strong> bán quần áo với các tính năng hiện đại:</p> <ul class='list-disc list-inside'><li><strong>Tìm kiếm</strong>, lọc theo biến thể sản phẩm, thương hiệu và mức giá.</li><li>Hỗ trợ <strong>giỏ hàng</strong>, <strong>mã giảm giá</strong>, <strong>thanh toán online</strong> qua Momo, VNPay, COD.</li></ul> <p><strong>Hệ thống đặt hàng:</strong></p> <ul class='list-disc list-inside'><li>Theo dõi trạng thái đơn hàng.</li><li>Gửi thông báo tự động qua email.</li></ul> <p><strong>Quản lý menu:</strong></p> <ul class='list-disc list-inside'><li>Nhiều cấp.</li><li>Hỗ trợ widget, chương trình sale.</li></ul> <p><strong>Phân quyền tài khoản:</strong></p> <ul class='list-disc list-inside'><li>Theo từng vai trò.</li></ul> <p><strong>Quản lý đơn hàng:</strong></p> <ul class='list-disc list-inside'><li>Cập nhật trạng thái đơn.</li><li>Duyệt đơn hàng.</li></ul>",
@@ -178,7 +198,8 @@ export const PROJECTS = [
           video: 'https://www.youtube.com/embed/-Zi5mvXNTTQ',
           github: 'https://github.com/khoait03',
           link: 'https://shoes.themedemo.site',
-          docs: 'https://drive.google.com/drive/folders/1454qsENP3aAEaPl4sf4TTJnO3y60iWZJ?usp=sharing',
+          // https://drive.google.com/drive/folders/1454qsENP3aAEaPl4sf4TTJnO3y60iWZJ?usp=sharing
+          docs: '',
           description: {
                vietnamese:
                     "<p><strong>Website thương mại điện tử</strong> bán phụ kiện giày dép với các tính năng:</p> <ul class='list-disc list-inside'><li><strong>Tìm kiếm</strong>, lọc theo thương hiệu và mức giá.</li><li>Hỗ trợ <strong>giỏ hàng</strong>, <strong>mã giảm giá</strong>, <strong>thanh toán online</strong> qua Momo, VNPay, COD.</li><li><strong>Đặt hàng</strong>: theo dõi trạng thái đơn hàng và gửi thông báo tự động qua email.</li><li><strong>Phân quyền tài khoản</strong> theo từng vai trò.</li><li><strong>Quản lý đơn hàng</strong>: cập nhật trạng thái đơn, duyệt đơn.</li></ul>",
@@ -335,7 +356,7 @@ export const TITLES = {
           english: ['About', ' Me'],
      },
      experiences: {
-          vietnamese: 'Hành trình',
+          vietnamese: 'Kinh nghiệm học tập và làm việc',
           english: 'Timeline',
      },
      projects: {

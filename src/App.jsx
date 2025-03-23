@@ -29,13 +29,12 @@ const App = () => {
                  <Header />
                  <Hero />
                  {/* <About /> */}
-                 <Technologies />
                  <Experience />
                  <Project />
+                 <Technologies />
                  <Contact />
 
                  <div className="fixed bottom-5 right-5 md:bottom-auto md:top-1/2 md:-translate-y-1/2 bg-white text-neutral-900 dark:bg-neutral-800 dark:text-neutral-200 flex flex-row md:flex-col gap-2 items-center rounded-full px-3 py-2 shadow-lg">
-          
                       {/* <div className="fixed bottom-10 right-5 bg-white text-neutral-900 dark:bg-neutral-800 dark:text-neutral-200 flex flex-col gap-2 items-center rounded-full py-1 shadow-lg"> */}
                       <button className="relative group p-2 cursor-pointer" onClick={toggleLanguage}>
                            {language === 'vietnamese' ? 'EN' : 'VI'}
@@ -55,12 +54,7 @@ const App = () => {
                                 <span>{language === 'vietnamese' ? 'Giới thiệu' : 'About me'}</span>
                            </span>
                       </a>
-                      <a href="#skill" className="relative group p-2 cursor-pointer">
-                           <CiStar className="text-2xl" />
-                           <span className="absolute right-full mr-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white text-lg px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity w-auto min-w-max whitespace-nowrap hidden md:block ">
-                                <span>{language === 'vietnamese' ? 'Kỹ năng' : 'Skill'}</span>
-                           </span>
-                      </a>
+
                       <a href="#experiences" className="relative group p-2 cursor-pointer">
                            <CiAlarmOn className="text-2xl" />
                            <span className="absolute right-full mr-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white text-lg px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity w-auto min-w-max whitespace-nowrap hidden md:block">
@@ -72,6 +66,13 @@ const App = () => {
                            <CiFolderOn className="text-2xl" />
                            <span className="absolute right-full mr-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white text-lg px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity w-auto min-w-max whitespace-nowrap hidden md:block">
                                 {language === 'vietnamese' ? 'Dự án' : 'Project'}
+                           </span>
+                      </a>
+                      
+                      <a href="#skill" className="relative group p-2 cursor-pointer">
+                           <CiStar className="text-2xl" />
+                           <span className="absolute right-full mr-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white text-lg px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity w-auto min-w-max whitespace-nowrap hidden md:block ">
+                                <span>{language === 'vietnamese' ? 'Kỹ năng' : 'Skill'}</span>
                            </span>
                       </a>
 

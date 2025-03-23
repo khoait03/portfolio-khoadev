@@ -25,7 +25,16 @@ const Project = () => {
                     {PROJECTS.map((project, index) => (
                          <div className="mb-8 flex flex-wrap lg:justify-center gap-10" key={index}>
                               <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -100 }} transition={{ duration: 1 }} className="w-full lg:w-1/4">
-                                   <img src={project.image} alt={project.title.english} className="h-auto lg:h-[220px] mb-6 rounded object-cover mx-auto" />
+                                   <img
+                                        onClick={() => {
+                                             if (project.description[language]) {
+                                                  setSelectedDetail(project.description[language]);
+                                             }
+                                        }}
+                                        src={project.image}
+                                        alt={project.title.english}
+                                        className="h-auto lg:h-[220px] mb-6 rounded object-cover mx-auto cursor-pointer"
+                                   />
                               </motion.div>
                               <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 100 }} transition={{ duration: 1 }} className="w-full max-w-xl lg:w-3/4">
                                    <h4 className="mb-2 font-semibold lg:text-lg">{project.title[language]}</h4>
@@ -82,7 +91,7 @@ const Project = () => {
                                                        onClick={() => setSelectedDetail(project.description[language])}
                                                        className="inline-flex items-center gap-1 px-3 py-1 bg-gray-800 dark:bg-neutral-200 rounded hover:bg-gray-700 dark:hover:bg-neutral-50 cursor-pointer"
                                                   >
-                                                       <FaRegEye className={darkMode ? 'text-black' : 'text-white'} /> Detail
+                                                       <FaRegEye className={darkMode ? 'text-black' : 'text-white'} /> View
                                                   </button>
                                              )}
                                              {project.docs && (
