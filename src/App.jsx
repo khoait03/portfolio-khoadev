@@ -29,8 +29,8 @@ const App = () => {
                  <Header />
                  <Hero />
                  {/* <About /> */}
-                 <Experience />
                  <Project />
+                 <Experience />
                  <Technologies />
                  <Contact />
 
@@ -68,7 +68,7 @@ const App = () => {
                                 {language === 'vietnamese' ? 'Dự án' : 'Project'}
                            </span>
                       </a>
-                      
+
                       <a href="#skill" className="relative group p-2 cursor-pointer">
                            <CiStar className="text-2xl" />
                            <span className="absolute right-full mr-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white text-lg px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity w-auto min-w-max whitespace-nowrap hidden md:block ">
