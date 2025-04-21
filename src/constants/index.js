@@ -233,7 +233,7 @@ export const CONTACT = {
      email: 'nguyenleanhkhoa.dev@gmail.com',
      phone: '0336216546',
      linkedin: {
-          url: 'https://www.linkedin.com/',
+          url: 'https://www.linkedin.com/in/nguyenleanhkhoa03',
           icon: React.createElement(FaLinkedin),
      },
      github: {
@@ -241,7 +241,7 @@ export const CONTACT = {
           icon: React.createElement(FaGithub),
      },
      facebook: {
-          url: 'https://www.facebook.com/',
+          url: 'https://www.facebook.com/nguyenleanhkhoa03',
           icon: React.createElement(FaFacebook),
      },
 };
